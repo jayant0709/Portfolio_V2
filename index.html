@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jayant's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background-container">
+        <img id="bg-img" src="images/Background.jpg" alt="bg-img">
+    </div>
+    <div class="content-container">
+        <div class="navbar">
+            <h1>JAYANT PATIL</h1>
+            <div class="navlist">
+                <ul>
+                    <li><a class="scroll-link" href="#home">HOME</a></li>
+                    <li><a class="scroll-link" href="#about">ABOUT</a></li>
+                    <li><a class="scroll-link" href="#projects">PROJECTS</a></li>
+                    <li><a class="scroll-link" href="#contact">CONTACT</a></li>
+                </ul>                
+            </div>
+        </div>
+        <div id="home" class="home">
+            <div class="home-left">
+                <h2>👋 Hi, I'm</h2>
+                <h1>Jayant Patil</h1>
+                <p id="developer">I'm a Full Stack Web Developer</p>
+                <p>Currently immersed in the exciting
+                    world of technology as a B.Tech student majoring in
+                    Computer Science at VIIT College. With a passion for
+                    both software development and web design, I've
+                    honed my skills in various programming languages
+                    and problem-solving techniques.                    
+                </p>
+
+                <div class="mediaList">
+                    <img id="linkedin-img" src="images/linkedin.png" onclick="window.open('https://www.linkedin.com/in/jayant-patil-99a644257/')" alt="linkedin">
+                    <img id="github-img" src="images/github.png" onclick="window.open('https://github.com/jayant0709')" alt="github">
+                </div>
+            </div>
+            <div class="home-right">
+                <img id="profile-img" src="images/profile-img.jpg" alt="">
+            </div>
+        </div>
+        <h2 id="about">----< About Me /></h2>
+        <div class="about">
+            <div class="skills">
+                <h2>----< My Skills /></h2>
+                <div class="skills-images">
+                    <img class="skill-image" src="images/html.png" alt="HTML">
+                    <img class="skill-image" src="images/css.png" alt="CSS">
+                    <img class="skill-image" src="images/javascript.png" alt="JavaScript">
+                    <img class="skill-image" src="images/springboot.png" alt="Spring Boot">
+                    <img class="skill-image" src="images/angular.png" alt="Angular">
+                    <img class="skill-image" src="images/mongodb.png" alt="MongoDB">
+                    <img class="skill-image" src="images/java.png" alt="Java">
+                    <img class="skill-image" src="images/cpp.png" alt="C++">
+                    <img class="skill-image" src="images/vscode.png" alt="VS Code">
+                    <img class="skill-image" src="images/mysql.png" alt="MySQL">
+                    <img class="skill-image" src="images/git.png" alt="Github">
+                    <img class="skill-image" src="images/python.png" alt="Python">
+                    <img class="skill-image" src="images/django.png" alt="Django">
+                    <img class="skill-image" src="images/nodejs.png" alt="Node.js">
+                </div>
+            </div>
+            <div class="moreaboutme">
+                <h2>----< More About Me /></h2>
+                <p>My journey into coding began with languages like Java, Python, and C++, providing me with a solid foundation in software development. Delving deeper, I've explored the intricacies of Data Structures and Algorithms (DSA), finding joy in crafting elegant solutions to complex problems.</p>
+                <p>In addition to my backend development expertise, I also have a keen eye for frontend design. Leveraging HTML, CSS, and JavaScript, I enjoy creating visually appealing and user-friendly interfaces for websites. I am particularly interested in full-stack web development, working with modern JavaScript frameworks like React and Node.js, as well as implementing RESTful APIs. Furthermore, I am keen on utilizing Java and Spring Boot to build robust backend services and microservices architecture.</p>
+                <p>As I continue my academic and professional journey, I am eager to contribute to innovative projects and collaborate with like-minded individuals in the tech community. My goal is to leverage my skills to develop scalable and responsive web applications that make a meaningful impact.</p>
+            </div>
+        </div>
+        <h2 id="projects" >----< My Projects /></h2>
+        <div class="projects">
+            <div class="project1">
+                <div class="project1-left">
+                    <img id="project1-img" src="images/project1-img.png" alt="project1-img">
+                </div>
+                <div class="project1-right">
+                    <p>
+                        <h2>Student Activity Portal</h2>
+                        The Student Activity Portal is a web application designed to
+                        facilitate student engagement in various extracurricular activities
+                        within an educational institution. It features a backend developed
+                        using Spring Boot, a frontend built with Angular, and MongoDB as
+                        the database for storing application data.
+                    </p>
+                    <p>
+                        <strong>Technologies Used:</strong> <span>SpringBoot</span> <span>Angular</span> <span>MongoDB</span> <span>HTML</span> <span>CSS</span> <span>JavaScript</span>
+                    </p>
+                </div>
+            </div>
+            <div class="project2">
+                <div class="project2-left">
+                    <img id="project2-img" src="images/project2-img.png" alt="project2-img">
+                </div>
+                <div class="project2-right">
+                    <h2>Xpense Tracking System</h2>
+                    <p>
+                        Developed a comprehensive Expense Tracking System using Django
+                        framework, which efficiently manages expenses and utilizes
+                        MongoDB for database storage. The system incorporates various
+                        features for tracking expenses, generating reports, and analyzing
+                        spending patterns.
+                    </p>
+                    <p>
+                        <strong>Technologies Used:</strong> <span>Django</span> <span>MySQL</span> <span>HTML</span> <span>CSS</span> <span>JavaScript</span>
+                    </p>
+                    <p>
+                        <img id="github-img" src="images/github.png" onclick="window.open('https://github.com/jayant0709/Expense_Tracker')" alt="github">
+                    </p>
+                </div>
+            </div>
+        </div>
+        <h2 id="contact" >----< Contact Me /></Contact></h2>
+        <div class="contact">
+            <div class="myform">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Your Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name here" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email here" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message:</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Enter your message here" required></textarea>
+                    </div>
+                    <button type="button" id="submitBtn">Submit</button>
+                </form>
+            </div>
+        </div>                
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+US+Trad:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Inter';
+}
+
+body:hover::before {
+    opacity: 1;
+}
+
+.background-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+#bg-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
+    transform: scaleX(-1);
+}
+
+.content-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    padding: 20px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    z-index: 50;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-image: url(images/Background.jpg);
+    /* border: 2px solid green; */
+    margin: 0;
+    width: 95%;
+    position: fixed;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, .37);
+    border-radius: 20px;
+
+}
+
+.navbar h1 {
+    margin: 0;
+}
+
+.navlist {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px; /* Add padding to the right for spacing */
+}
+
+.navlist ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+}
+
+.navlist ul li {
+    margin: 0 10px; /* Adjust margin for spacing between list items */
+    padding: 10px 15px; /* Add padding for better click/tap area */
+    font-family: Arial, sans-serif; /* Choose a suitable font */
+    font-size: 16px; /* Adjust font size */
+    text-transform: uppercase; /* Uppercase text */
+    letter-spacing: 1px; /* Add letter spacing for clarity */
+    cursor: pointer; /* Show pointer cursor on hover */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.navlist ul li:hover {
+    background-color: transparent; /* Light background on hover */
+    border-radius: 5px; /* Rounded corners on hover */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.navlist ul li a {
+    text-decoration: none; /* Remove underline from links */
+    color: #333; /* Text color */
+}
+
+.navlist ul li a:hover {
+    color: #555; /* Darker text color on hover */
+}
+
+.home h1 {
+    font-family: 'Playwrite', sans-serif;
+    font-weight: 600;
+    color: rgb(47, 47, 255);
+}
+
+.home h2 {
+    font-weight: 600;
+}
+
+#developer{
+    font-size:xx-large;
+}
+
+.medialist {
+    display: inline;
+}
+
+#linkedin-img,
+#github-img {
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease; /* Add a smooth transition effect */
+}
+
+#linkedin-img:hover,
+#github-img:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Customize the glow color and intensity */
+}
+
+
+#profile-img {
+    height: 400px;
+    width: auto;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5%;
+    font-weight: 400;
+
+}
+
+.home-left {
+    flex: 2;
+    padding: 20px;
+    margin-right: 10px; /* Add some space between the sections if needed */
+    text-align: justify;
+    font-size: x-large;
+    padding-left: 50px;
+}
+
+.home-right {
+    flex: 1;
+    padding: 20px;
+    margin-left: 10px; /* Add some space between the sections if needed */
+}
+
+.about {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: flex-start;
+    padding: 20px;
+    box-sizing: border-box;
+    height: 100vh;
+}
+
+.skills, .moreaboutme {
+    flex: 1;
+    padding: 20px;
+}
+
+.skills {
+    margin-right: 10px; /* Optional: Add spacing between sections */
+    background: rgba(255, 255, 255, 0.5); /* Translucent background */
+    backdrop-filter: blur(6px); /* Apply blur effect */
+    color: black; /* Text color to contrast against the background */
+    border-radius: 10px; /* Optional: Rounded corners */
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, .37);
+    height: 500px;
+}
+
+.skills-images {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px; /* Add some spacing between the heading and the images */
+}
+
+.moreaboutme {
+    margin-left: 10px; /* Optional: Add spacing between sections */
+    background: rgba(255, 255, 255, 0.5); /* Translucent background */
+    backdrop-filter: blur(6px);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, .37);
+    border-radius: 10px;
+    font-size: large;
+    height: 500px;
+}
+
+.skill-image {
+    width: 100px;
+    height: auto;
+    margin: 10px; /* Adjust as needed */
+    transition: transform 0.3s ease; /* Smooth transition for scaling */
+}
+
+.skill-image:hover {
+    transform: scale(1.2); /* Scale the image to 1.2 times its original size */
+}
+
+#project1-img, #project2-img{
+    width: 95%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.project1, .project2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.5); /* Translucent background */
+    backdrop-filter: blur(6px);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, .37);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.projects{
+    display: flex;
+    flex-direction: column;
+}
+
+.project1-right, .project2-right{
+    padding: 20px;
+    font-size: large;
+}
+
+.project1 span, .project2 span {
+    padding: 5px;
+    background-color: rgba(10, 201, 10, 0.5);
+    color: white;
+    backdrop-filter: blur(6px);
+    border-radius: 5px;
+    margin: 5px;
+    transition: transform 0.3s ease;
+}
+
+.project1 span:hover, .project2 span:hover {
+    background-color: rgba(10, 201, 10, 1);
+    padding: 7px;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.myform {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(6px);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, .37);
+    border-radius: 10px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font: weight 100px;;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+textarea::placeholder {
+    color: #999; /* Placeholder text color */
+    font-family: 'Inter', 'Arial Narrow', Arial, sans-serif;
+}
+
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0ac90a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #098009;
+}
+
+.snackbar {
+    position: fixed;
+    top: 50px;
+    right: -100%;
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    text-align: center;
+    transition: right 0.3s ease;
+}
+
+.snackbar.show {
+    right: 20px;
+}
+
