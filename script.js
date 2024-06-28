@@ -1,16 +1,16 @@
 document.addEventListener('mousemove', function(e) {
-    var dot = document.getElementById('cursor-dot'); // Assuming you have an element with id="cursor-dot"
+    var dot = document.getElementById('cursor-dot');
     if (!dot) {
         dot = document.createElement('div');
         dot.id = 'cursor-dot';
         dot.style.position = 'fixed';
-        dot.style.width = '25px'; // Adjust dot size as needed
-        dot.style.height = '25px'; // Adjust dot size as needed
-        dot.style.backgroundColor = 'rgba(0, 123, 255, 0.3)'; // Blue dot color
-        dot.style.borderRadius = '50%'; // Shape the dot as a circle
-        dot.style.pointerEvents = 'none'; // Ensure the dot doesn't interfere with click events
-        dot.style.transition = 'transform 0.1s ease, opacity 0.5s ease'; // Smooth transitions
-        document.body.appendChild(dot); // Append dot to body
+        dot.style.width = '25px';
+        dot.style.height = '25px';
+        dot.style.backgroundColor = 'rgba(0, 123, 255, 0.3)';
+        dot.style.borderRadius = '50%';
+        dot.style.pointerEvents = 'none';
+        dot.style.transition = 'transform 0.1s ease, opacity 0.5s ease';
+        document.body.appendChild(dot);
     }
     
     var offsetX = 10;
