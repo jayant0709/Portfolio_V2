@@ -48,9 +48,13 @@ function showSnackbar(message) {
     }, 3000);
 }
 
+function handleResume(event){
+    showSnackbar('Shushh...Not now...Hehe!!')
+}
+
 document.getElementById('submitBtn').addEventListener('click', handleSubmit);
 
-
+document.getElementById('resumeBtn').addEventListener('click', handleResume);
 
 
 

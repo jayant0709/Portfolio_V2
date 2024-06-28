@@ -116,8 +116,18 @@ body:hover::before {
     font-size:xx-large;
 }
 
-.medialist {
-    display: inline;
+.mediaList {
+    display: flex;
+    align-items: center;
+}
+
+.mediaList span{
+    background-color: #0ac90a;
+    border-radius: 10px;
+    padding: 8px;
+    color: white;
+    transition: box-shadow 0.3s ease;
+    cursor: pointer;
 }
 
 #linkedin-img,
@@ -126,10 +136,11 @@ body:hover::before {
     height: 70px;
     cursor: pointer;
     transition: box-shadow 0.3s ease;
+    margin-right: 30px;
 }
 
 #linkedin-img:hover,
-#github-img:hover {
+#github-img:hover, .mediaList span:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
